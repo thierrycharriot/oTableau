@@ -14,9 +14,6 @@ const app = {
         * target.addEventListener(type, listener [, options]);
         */
        inputLines.addEventListener('keyup', function () {
-            //console.log('glop glop')
-            const valueText = document.querySelector('#text').value
-            const valueLines = document.querySelector('#number_lines').value
             let contentTable = document.querySelector('.text-board')
             /**
              * Vider contenu tableau
@@ -25,6 +22,9 @@ const app = {
              * element.innerHTML = htmlString;
              */
             contentTable.innerHTML = ''
+            const valueText = document.querySelector('#text').value
+            const valueLines = document.querySelector('#number_lines').value
+
             console.log(valueText) // Debug OK
             console.log(valueLines) // Debug OK
     
